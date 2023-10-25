@@ -1,0 +1,40 @@
+body {
+    background-color: #111111;
+    margin: 0px;
+    padding: 0px;   
+}
+
+.jh-header {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("./../img/git-e-github.jpg"); 
+    background-size:cover;
+}
+
+.jh-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(17, 17, 17, 0.5);
+    width: 100%;
+    height: 10vh;
+}
+
+.jh-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 0px 1em;
+    display: flex;
+    align-items: center;
+    transition: 0.3s 0s;
+}
+
+.jh-link:hover {
+    text-shadow: 3px 3px 3px white;
+}
+
+.jh-title {
+    margin-top: 30vh ;
+    text-align: center;
+    color: lightskyblue;
+}
