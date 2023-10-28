@@ -33,12 +33,13 @@ body {
   background-color: rgb(17, 17, 17, 0.5);
   z-index: 999;
   width: 100%;
+  position: fixed;
 }
 
 .jh-link {
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
-  color: white;
+  color: #fff;
   font-size: 1.2em;
   font-weight: 500;
   padding: 1rem 0;
@@ -72,4 +73,67 @@ body {
   100% {
     transform: scale(1);
   }
+}
+
+.conteudo {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.titulos {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  color: #F05032;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.textos {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  color: #fff;
+  text-align: left;
+  margin: 0;
+}
+
+.textos span {
+  padding-left: 3em;
+}
+
+#conteudoControleVersao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#conteudoControleVersao img {
+  width: 70%;
+  margin-top: 1.2rem;
+  border-radius: .3rem;
+}
+
+#conteudoHistoria {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+#conteudoHistoria img {
+  width: 20%;
+  height: 20%;
+  border-radius: .3rem;
+}
+
+#conteudoDefinicao {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+#conteudoDefinicao img {
+  width: 20%;
+  height: 20%;
+  border-radius: .3rem;
 }
