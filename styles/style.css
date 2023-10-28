@@ -185,6 +185,10 @@ body {
   scroll-margin-top: 5rem;
 }
 
+#problemasResolvidos {
+  scroll-margin-top: 5rem;
+}
+
 .comando-div {
   padding-top: 2rem;
   padding-bottom: 1rem;

@@ -17,7 +17,7 @@
             <a class="jh-link" href="#historia">História</a>
             <a class="jh-link" href="#definicao">Definição</a>
             <a class="jh-link" href="#comandosBasicos">Comandos básicos</a>
-            <a class="jh-link" href="#">Problemas resolvidos</a>
+            <a class="jh-link" href="#problemasResolvidos">Problemas resolvidos</a>
         </nav>
         <h1 class="jh-title">Introdução ao Git</h1>
     </header>
@@ -129,19 +129,60 @@
                 </ul>
                 <ul class="lista">
                     <li>
-                        <span class="span_orange">Commit:</span> Fazendo um commit, todos os arquivos que foram adicionados na área de preparação serão consolidadas (Commited) sendo salvas no repositório, o comando é o seguinte:
+                        <span class="span_orange">Commit:</span> Fazendo um commit, todos os arquivos que foram
+                        adicionados na área de preparação serão consolidadas (Commited) sendo salvas no repositório, o
+                        comando é o seguinte:
                     </li>
                     <div class="comando-div">
                         <p class="comando">git commit -m "Descrição do que foi feito nesse commit"</p>
                     </div>
                 </ul>
+                <ul class="lista">
+                    <li>
+                        <span class="span_orange">Clone:</span> Caso o repositório em que você queira trabalhar já
+                        exista, você pode realizar um clone, que traz todos os arquivos desse repositório para sua
+                        maquina em seu diretório:
+                    </li>
+                    <div class="comando-div">
+                        <p class="comando">git clone https://github.com/Conta_Exemplo/Repositorio_Exemplo.git</p>
+                    </div>
+                </ul>
+                <ul class="lista">
+                    <li>
+                        <span class="span_orange">Status:</span> Para ver o status dos arquivos, se foram adicionados ou não monitorados basta o seguinte comando:
+                    </li>
+                    <div class="comando-div">
+                        <p class="comando">git status</p>
+                    </div>
+                </ul>
+                <ul class="lista">
+                    <li>
+                        <span class="span_orange">Log:</span> Este comando mostra todos os commits anteriores, ou seja o histórico, com informações como autor do commit, data, id entre outros:
+                    </li>
+                    <div class="comando-div">
+                        <p class="comando">git log</p>
+                    </div>
+                </ul>
+                <ul class="lista">
+                    <li>
+                        <span class="span_orange">Push:</span> Caso queira subir suas alterações para um repositório
+                        remoto, como o github por exemplo, após fazer o commit da alteração desejada, adicione o
+                        repositório remoto e faça um push para o seu diretório com os seguintes comandos:
+                    </li>
+                    <div class="comando-div">
+                        <p class="comando">git remote add origin https://github.com/Conta_Exemplo/Repositorio_Exemplo.git </p>
+                        <p class="comando">git push origin main</p>
+
+                    </div>
+                </ul>
+                <p class="textos">Dessa forma todas as alterações feitas até o ultimo commit são salvas no repositório remoto.</p>
 
 
 
             </div>
         </div>
 
-        <div>
+        <div id="problemasResolvidos">
             <h1 class="titulos">Problemas resolvidos com GIT</h1>
             <div>
                 <p class="textos">
