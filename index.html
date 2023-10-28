@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/git.png" type="image/x-icon">
+    <title>Sobre o GIT</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+    <header class="jh-header" id="home">
+        <nav class="jh-nav">
+            <a class="jh-link" href="#home">Home</a>
+            <a class="jh-link" href="#controleVersao">Controle de versão</a>
+            <a class="jh-link" href="#historia">História</a>
+            <a class="jh-link" href="#definicao">Definição</a>
+            <a class="jh-link" href="#comandosBasicos">Comandos básicos</a>
+            <a class="jh-link" href="#problemasResolvidos">Problemas resolvidos</a>
+        </nav>
+        <h1 class="jh-title">Introdução ao Git</h1>
+    </header>
+
+    <main class="conteudo">
+        <div id="controleVersao">
+            <h1 class="titulos">Controle de versão</h1>
+            <div id="conteudoControleVersao">
+                <p class="textos">
+                    <span>Há</span> muitos anos, antes do controle de versão,
+                    desenvolvedores tinham que criar cópias de seus projetos manualmente
+                    para manter um histórico de alterações. Isso era um processo tedioso
+                    e propenso a erros. Com o tempo, surgiram ferramentas de controle de
+                    versão que permitiam aos desenvolvedores rastrear e gerenciar
+                    alterações em seus projetos de forma mais eficiente. Hoje em dia, o
+                    controle de versão é uma prática comum e essencial para o
+                    desenvolvimento de software em equipe. Ele permite que os
+                    desenvolvedores trabalhem juntos em um projeto, mantendo um
+                    histórico completo de todas as alterações feitas ao longo do tempo.
+                </p>
+                <img src="./img/controle_versao.jpg" alt="Controle de versão" />
+            </div>
+        </div>
+
+        <div id="historia">
+            <h1 class="titulos">História do GIT</h1>
+            <div id="conteudoHistoria">
+                <img src="./img/linus.jpeg" alt="Linus Torvalds" />
+                <p class="textos">
+                    <span>O</span> Git foi criado por Linus Torvalds em 2005, enquanto
+                    trabalhava no desenvolvimento do kernel do Linux. Ele estava
+                    insatisfeito com as ferramentas de controle de versão disponíveis na
+                    época e decidiu criar sua própria solução. O objetivo era criar um
+                    sistema de controle de versão distribuído, rápido e eficiente, que
+                    pudesse lidar com projetos grandes e pequenos. O processo de criação
+                    do Git foi bastante iterativo. Torvalds começou criando um conjunto
+                    de scripts para gerenciar as versões do kernel do Linux. Ele então
+                    decidiu reescrever esses scripts em C, criando uma ferramenta mais
+                    robusta e flexível. O Git foi lançado oficialmente em 2005 e
+                    rapidamente se tornou popular entre os desenvolvedores de software.
+                    Uma das principais vantagens do Git é sua arquitetura distribuída.
+                    Isso significa que cada desenvolvedor tem uma cópia completa do
+                    repositório em seu próprio computador, o que torna o processo de
+                    colaboração mais fácil e eficiente. Além disso, o Git é conhecido
+                    por sua velocidade e eficiência, tornando-o uma escolha popular para
+                    projetos de todos os tamanhos. Hoje em dia, o Git é amplamente
+                    utilizado em todo o mundo e é considerado uma das ferramentas de
+                    controle de versão mais populares e poderosas disponíveis para
+                    desenvolvedores de software.
+                </p>
+            </div>
+        </div>
+
+        <div id="definicao">
+            <h1 class="titulos">Definição do GIT</h1>
+            <div id="conteudoDefinicao">
+                <p class="textos">
+                    <span>O</span> Git é um sistema de controle de versão distribuído
+                    gratuito e de código aberto projetado para lidar com tudo, desde
+                    projetos pequenos a muito grandes com velocidade e eficiência. Ele
+                    permite que os desenvolvedores trabalhem juntos em um projeto,
+                    mantendo um histórico completo de todas as alterações feitas ao
+                    longo do tempo. O Git é fácil de aprender e tem uma pegada pequena
+                    com desempenho extremamente rápido. Ele supera as ferramentas SCM
+                    como Subversion, CVS, Perforce e ClearCase com sua arquitetura
+                    distribuída, que significa que cada desenvolvedor tem uma cópia
+                    completa do repositório em seu próprio computador, tornando o
+                    processo de colaboração mais fácil e eficiente. O Git é amplamente
+                    utilizado em todo o mundo e é considerado uma das ferramentas de
+                    controle de versão mais populares e poderosas disponíveis para
+                    desenvolvedores de software.
+                </p>
+                <img src="./img/git.png" alt="GIT" />
+            </div>
+        </div>
+
+        <div id="comandosBasicos">
+            <h1 class="titulos">Comandos Básicos</h1>
+            <div>
+                <p class="textos">
+                    <span>O</span> Git possui uma serie de comandos básicos, vamos
+                    fazer um passo a passo desde iniciar um projeto até fazer um commit no github, lembrando que para os
+                    usuários de Windows é necessário o download do git, no Linux ele já vem nativamente.
+                </p>
+                <ul class="lista">
+                    <li>
+                        <span class="span_orange">Iniciando um projeto:</span> Navegue até o diretório em que você vai
+                        iniciar seu projeto e digite o segundo comando:
+
+                    </li>
+                    <div class="comando-div">
+                        <p class="comando"><span class="span_comando">~$ </span>git init</p>
+                    </div>
+                </ul>
+                <p class="textos">Com isso o repósitório é iniciado, e uma pasta .git é criada no diretório, contendo os
+                    arquivos necessários para o repositório, mas nenhum arquivo é monitorado ainda.</p>
+                <ul class="lista">
+                    <li>
+                        <span class="span_orange">Monitorando arquivos:</span> Se você quer monitorar os arquivos,
+                        precisa adicioná-los a área de prepraração (Staging area), em que podemos fazer de duas formas:
+                        adicionado arquivo por arquivo, ou adicionando todos os arquivos modificados, que é mais
+                        conveniente:
+
+                    </li>
+                    <div class="comando-div">
+                        <p class="comando"><span class="span_comando">~$ </span> git add NOME_DO_ARQUIVO</p>
+                        <p class="comando"><span class="span_comando">~$ </span>git add .</p>
+                    </div>
+                </ul>
+                <ul class="lista">
+                    <li>
+                        <span class="span_orange">Commit:</span> Fazendo um commit, todos os arquivos que foram
+                        adicionados na área de preparação serão consolidadas (Commited) sendo salvas no repositório, o
+                        comando é o seguinte:
+                    </li>
+                    <div class="comando-div">
+                        <p class="comando"><span class="span_comando">~$ </span>git commit -m "Descrição do que foi feito nesse commit"</p>
+                    </div>
+                </ul>
+                <ul class="lista">
+                    <li>
+                        <span class="span_orange">Clone:</span> Caso o repositório em que você queira trabalhar já
+                        exista, você pode realizar um clone, que traz todos os arquivos desse repositório para sua
+                        maquina em seu diretório:
+                    </li>
+                    <div class="comando-div">
+                        <p class="comando"><span class="span_comando">~$ </span>git clone https://github.com/Conta_Exemplo/Repositorio_Exemplo.git</p>
+                    </div>
+                </ul>
+                <ul class="lista">
+                    <li>
+                        <span class="span_orange">Status:</span> Para ver o status dos arquivos, se foram adicionados ou não monitorados basta o seguinte comando:
+                    </li>
+                    <div class="comando-div">
+                        <p class="comando"><span class="span_comando">~$ </span>git status</p>
+                    </div>
+                </ul>
+                <ul class="lista">
+                    <li>
+                        <span class="span_orange">Log:</span> Este comando mostra todos os commits anteriores, ou seja o histórico, com informações como autor do commit, data, id entre outros:
+                    </li>
+                    <div class="comando-div">
+                        <p class="comando"><span class="span_comando">~$ </span>git log</p>
+                    </div>
+                </ul>
+                <ul class="lista">
+                    <li>
+                        <span class="span_orange">Push:</span> Caso queira subir suas alterações para um repositório
+                        remoto, como o github por exemplo, após fazer o commit da alteração desejada, adicione o
+                        repositório remoto e faça um push para o seu diretório com os seguintes comandos:
+                    </li>
+                    <div class="comando-div">
+                        <p class="comando"><span class="span_comando">~$ </span>git remote add origin https://github.com/Conta_Exemplo/Repositorio_Exemplo.git </p>
+                        <p class="comando"><span class="span_comando">~$ </span>git push origin main</p>
+
+                    </div>
+                </ul>
+                <p class="textos">Dessa forma todas as alterações feitas até o ultimo commit são salvas no repositório remoto.</p>
+
+
+
+            </div>
+        </div>
+
+        <div id="problemasResolvidos">
+            <h1 class="titulos">Problemas resolvidos com GIT</h1>
+            <div>
+                <p class="textos">
+                    <span>O</span> Git resolve uma série de problemas reais que são comuns
+                    em projetos de software. Alguns desses problemas incluem:
+                </p>
+
+                <ul class="lista">
+                    <li>
+                        <span class="span_orange">Perda de dados:</span> O Git permite que você armazene cópias de todas
+                        as versões do seu código-fonte, o que ajuda a proteger contra a perda de dados.
+                    </li>
+                    <li>
+                        <span class="span_orange">Conflitos de mesclagem:</span> O Git pode resolver automaticamente
+                        muitos conflitos de mesclagem, o que torna o processo de mesclagem de alterações de diferentes
+                        fontes mais fácil e menos propenso a erros.
+                    </li>
+                    <li>
+                        <span class="span_orange">Colaborações:</span> O Git permite que você colabore com outros
+                        desenvolvedores de forma eficiente, permitindo que você veja as alterações que eles estão
+                        fazendo e as incorpore ao seu próprio código.
+                    </li>
+                </ul>
+
+                <p class="textos">
+                    <span>Aqui</span> estão alguns exemplos específicos de como o Git foi usado para resolver problemas
+                    reais:
+                </p>
+
+                <ul class="lista">
+                    <li>
+                        A <span class="span_orange">NASA</span> usou o Git para gerenciar o código-fonte do Mars Rover
+                        Curiosity. O Git ajudou a NASA a
+                        rastrear as mudanças feitas no código do rover ao longo do tempo e a reverter alterações
+                        indesejadas.
+                    </li>
+
+                    <li>
+                        O <span class="span_orange">Google</span> usa o Git para gerenciar o código-fonte do Android. O
+                        Git ajuda o Google a colaborar com centenas
+                        de desenvolvedores em todo o mundo para criar o sistema operacional Android.
+                    </li>
+
+                    <li>
+                        O <span class="span_orange">Facebook</span> usa o Git para gerenciar o código-fonte do
+                        Instagram. O Git ajuda o Facebook a colaborar com
+                        centenas de desenvolvedores em todo o mundo para criar o aplicativo de fotos Instagram.
+
+                    </li>
+                </ul>
+
+                <p class="textos">
+                    <span>O</span> Git é uma ferramenta poderosa que pode ajudar a resolver uma variedade de problemas
+                    reais em projetos
+                    de software. É uma parte essencial do fluxo de trabalho de muitos desenvolvedores e é usado por
+                    empresas de
+                    todos os tamanhos.
+                </p>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2023 Islan Pereira, Gustavo Marcena e José Henrique Araujo</p>
+        <p>All Right Reserved</p>
+    </footer>
+</body>
+
+</html>
