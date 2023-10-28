@@ -179,3 +179,32 @@ body {
   font-family: 'poppins', sans-serif;
   margin: 0;
 }
+
+
+#comandosBasicos {
+  scroll-margin-top: 5rem;
+}
+
+#problemasResolvidos {
+  scroll-margin-top: 5rem;
+}
+
+.comando-div {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  
+}
+.comando {
+    background-color: #2d2d2d;
+    color: white;
+    font-family: "Courier New", monospace;
+    padding: 10px;
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.span_comando{
+  color: #00ff0f;
+}
